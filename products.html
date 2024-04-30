@@ -125,6 +125,14 @@
             }
         }
 
+        footer {
+            background-color:#6f1d1b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+       
+
     </style>
 </head>
 <body>
@@ -200,9 +208,14 @@
         <button onclick="sendWhatsapp()">Click to buy</button>
     </div>
 </section>
+
+<footer>
+    <p>&copy; 2024 MM & CO. All rights reserved.</p>
+  </footer>
+
 <script>
       function sendWhatsapp() {
-      const phoneNumber = '+918973870498'; 
+      const phoneNumber = '+918973870498'; // Replace with your phone number in international format
       const message = "🌟 Hi there! I'm interested in purchasing your Copra.";
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
